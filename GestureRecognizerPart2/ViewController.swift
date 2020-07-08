@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func imageSwiped(_ sender: UISwipeGestureRecognizer) {
+        
+        print("Image was swiped")
+    }
+    
 }
 
