@@ -21,16 +21,32 @@
                                     <outletCollection property="gestureRecognizers" destination="wRF-hl-HDJ" appends="YES" id="z1n-GL-lVJ"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text on the Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9E-dn-Grn">
+                                <rect key="frame" x="44" y="70" width="326" height="111"/>
+                                <color key="backgroundColor" red="1" green="0.54117647059999996" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="XTO-22-E6w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="m9E-dn-Grn" firstAttribute="centerX" secondItem="ywV-Ud-gns" secondAttribute="centerX" id="0L1-BJ-cXr"/>
                             <constraint firstItem="ywV-Ud-gns" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Gy-zw-Ils"/>
+                            <constraint firstItem="m9E-dn-Grn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="5tf-Wh-vD2"/>
                             <constraint firstItem="ywV-Ud-gns" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hh4-1O-qk1"/>
                             <constraint firstItem="ywV-Ud-gns" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JsB-cx-Arq"/>
                             <constraint firstItem="ywV-Ud-gns" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="bGW-DD-a68"/>
+                            <constraint firstItem="m9E-dn-Grn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="q8P-2X-7Vz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="m9E-dn-Grn" id="j3Z-3u-nRo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="wRF-hl-HDJ">
